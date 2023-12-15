@@ -1,0 +1,257 @@
+body {
+	margin: 0;
+	font-family: 'Quattrocento', serif;
+}
+
+#wraper{
+	width: 100%;
+	height: 100vh;
+}
+
+#header {
+	width: 100%;
+	/* background-color: var(--dark-brown); */
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: absolute;
+}
+
+#menu{
+	display: flex;
+	justify-content: space-around;
+	margin-right: 65px;
+}
+
+#menu .item{
+	margin: 0 25px;
+}
+#menu .item a{
+	color: var(--text-color);
+}
+#menu .item a:hover{
+	color: var(--hover-color);
+}
+
+#logo{
+	color: var(--text-color);
+	font-size: 37px;
+	margin-left: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#icons {
+	display: flex;
+	flex-direction: row;
+	margin-right: 30px;
+}
+
+#cart {
+	width: 30px;
+	height: 30px;
+	margin-right: 30px;
+}
+
+#cart i {
+	padding: 30%;
+	color: var(--text-color);
+}
+
+#cart i:hover {
+	color: var(--hover-color);
+}
+
+#user {
+	width: 30px;
+	height: 30px;
+}
+
+#user img {
+	width: 100%;
+}
+
+#banner{
+	width: 100%;
+	height: 120vh;
+	background-image: linear-gradient(0, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url("https://www.thespruce.com/thmb/gE21_TJXZEsfehkh-u1S-h0r82o=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1048216318-d702c35579b4496c8bdc5e9a967b37c5.jpg");
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	animation: fadeIn 2s;
+}
+
+#introduction {
+	width: 50vw;
+	height: 50vh;
+	color: var(--introduction-color);
+	font-size: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	text-align: center;
+}
+
+#about {
+	background-color: var(--dark-brown);
+	color: var(--text-color);
+	width: 90%;
+	padding: 5%;
+}
+
+.about-container {
+	text-align: center;
+	padding: 3%;
+	width: 50%;
+	margin: 5% auto;
+	border: solid 3px var(--hover-color);
+}
+
+#products {
+	padding: 100px 100px;
+	background-color: var(--introduction-color);
+}
+
+#products h1 {
+	text-align: center;
+	color: var(--dark-brown);
+	margin-bottom: 40px;
+}
+
+#list-products {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+#list-products .item {
+	width: 200px;
+	height: 330px;
+	background-color: var(--dark-brown);
+	border-radius: 10px;
+	margin: 25px;
+}
+
+#list-products .item:hover {
+	animation-name: openWide;
+	animation-duration: 0.1s;
+	animation-fill-mode: forwards;
+}
+
+#list-products .item .prod_img {
+	width: 170px;
+	height: 140px;
+	margin-top: 15px;
+	margin-left: 15px;
+	margin-right: 15px;
+	border-radius: 10px;
+}
+
+#list-products .item .txt_box {
+	padding-left: 25px;
+	padding-right: 25px;
+	color: var(--text-color);
+}
+
+#list-products .item button {
+	margin-left: 25px;
+	color: var(--hover-color);
+	width: 100px;
+	height: 50px;
+	font-size: 15px;
+}
+
+#list-products .item button:hover {
+	color: var(--dark-brown);
+}
+
+#comments {
+	padding: 20px 50px;
+	background-color: var(--introduction-color);
+}
+
+#comments h1 {
+	text-align: center;
+	color: var(--dark-brown);
+	margin-top: 0;
+	margin-bottom: 40px;
+}
+
+#comments_list {
+	list-style: none;
+	display: flex;
+ 	flex-wrap: wrap;
+ 	flex-direction: column;
+	align-content: center;
+}
+
+#comments_list .item {
+	width: 80%;
+	height: 400px;
+	background-color: var(--dark-brown);
+	border-radius: 10px;
+	margin: 30px;
+}
+
+#comments_list .item .avatar {
+	margin: 40px;
+	text-align: center;
+}
+
+#comments_list .item .ava_img {
+	width: 60px;
+	height: 60px;
+	border-radius: 30px;
+}
+
+#comments_list .item .starline {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#comments_list .item .star {
+	width: 20px;
+	height: 20px;
+}
+
+#comments_list .item .txt_box {
+	padding: 0 50px;
+	color: var(--text-color);
+	text-align: center;
+}
+
+footer {
+	background-color: var(--dark-brown);
+	color: var(--text-color);
+	padding: 15px;
+}
+
+footer h3 {
+	margin-top: 0px;
+}
+
+footer h4 {
+	margin-bottom: 0px;
+	text-align: center;
+}
+
+.contact {
+	display: flex;
+	justify-content: space-around;
+}
+
+.contact-social-media {
+	margin-right: 50px;
+}
+
+.social-media a {
+	color: var(--text-color);
+	text-decoration: none;
+}
+
+.social-media a:hover {
+	color: var(--hover-color);
+}

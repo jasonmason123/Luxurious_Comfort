@@ -1,0 +1,20 @@
+:root {
+	--dark-brown: #352315;
+	--hover-color: #9A7B4F;
+	--text-color: white;
+	--introduction-color: #BCA89F;
+}
+
+@keyframes openWide {
+    from {
+        padding: 0px;
+    }
+    to {
+        padding: 5px;
+    }
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100%{opacity: 1;}
+}
